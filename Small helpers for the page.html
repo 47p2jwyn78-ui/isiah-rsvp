@@ -1,0 +1,29 @@
+// Small helpers for the page
+document.addEventListener('DOMContentLoaded', () => {
+  const rsvpLink = 'https://docs.google.com/forms/d/e/1FAIpQLSevTbkaBeoRl_Eklqv05shwDX1QC3NQoEu16ogyA5QZXvRp5Q/viewform?usp=header';
+
+  const copyLinkBtn = document.getElementById('copy-link');
+  copyLinkBtn?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(rsvpLink);
+      alert('RSVP link copied to clipboard');
+    } catch (err) {
+      prompt('Copy this RSVP link:', rsvpLink);
+    }
+  });
+
+  const copyPayBtn = document.getElementById('copy-pay');
+  copyPayBtn?.addEventListener('click', async () => {
+    const links = [
+      'PayPal: https://www.paypal.me/IsiahStevens1/30',
+      'Venmo: https://venmo.com/@RHenika-Robin',
+      'Cash App: https://cash.app/$SJMS7/30'
+    ].join('\n');
+    try {
+      await navigator.clipboard.writeText(links);
+      alert('Payment links copied to clipboard');
+    } catch (err) {
+      prompt('Copy these payment links:', links);
+    }
+  });
+});

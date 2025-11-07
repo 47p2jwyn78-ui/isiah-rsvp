@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RSVP — Isiah Stevens Sr. Graduation Dinner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap" role="main">
+    <h1>🎓 Justice Served, Celebration Reserved — RSVP</h1>
+    <p class="lead">Honoring: Isiah Stevens Sr. — Associate of Arts in Criminal Justice<br>Date: December 20, 2025 • 7:00 PM • Café Sbisa, 1011 Decatur St, New Orleans</p>
+
+    <div class="grid">
+      <div class="qr" aria-hidden="false">
+        <!-- Hosted QR (points to your Google Form) -->
+        <img class="qrimg" alt="Scan to RSVP"
+          src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSevTbkaBeoRl_Eklqv05shwDX1QC3NQoEu16ogyA5QZXvRp5Q%2Fviewform%3Fusp%3Dheader">
+        <p class="small" style="text-align:center;margin-top:8px;">Scan to open the RSVP form or download/print this QR for invites</p>
+      </div>
+
+      <div class="col">
+        <p><strong>Open the RSVP form:</strong></p>
+        <p>
+          <a id="open-form" class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSevTbkaBeoRl_Eklqv05shwDX1QC3NQoEu16ogyA5QZXvRp5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">Open RSVP Form</a>
+          <button id="copy-link" class="btn alt">Copy RSVP Link</button>
+        </p>
+
+        <p class="small">Share this link in email/SMS or include the QR on printed invites.</p>
+
+        <hr style="opacity:.06;margin:18px 0">
+
+        <h3 style="margin:0 0 8px">Payment — $30 per guest</h3>
+        <p class="small">Please submit payment to secure your spot:</p>
+        <p>
+          <a class="btn" href="https://www.paypal.me/IsiahStevens1/30" target="_blank" rel="noopener noreferrer">PayPal</a>
+          <a class="btn" href="https://venmo.com/@RHenika-Robin" target="_blank" rel="noopener noreferrer">Venmo</a>
+          <a class="btn" href="https://cash.app/$SJMS7/30" target="_blank" rel="noopener noreferrer">Cash App</a>
+        </p>
+
+        <p style="margin-top:12px;" class="small">Need to copy all payment links? <button id="copy-pay" class="btn alt">Copy Links</button></p>
+      </div>
+    </div>
+
+    <hr style="opacity:.06;margin:20px 0">
+
+    <h3 style="margin:0 0 6px">Fill the form right here (optional)</h3>
+    <!-- Embedded Google Form -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSevTbkaBeoRl_Eklqv05shwDX1QC3NQoEu16ogyA5QZXvRp5Q/viewform?embedded=true" title="RSVP form"></iframe>
+
+    <footer>
+      <p>Questions? Email: <a href="mailto:isiah.stevens@example.com" class="goldlink">isiah.stevens@example.com</a></p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
